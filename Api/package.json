@@ -7,7 +7,7 @@
         "start": "node dist/index.js",
         "build": "tsc",
         "dev": "ts-node-dev src/index.ts",
-        "heroku-postbuild": "tsc && cd client && npm run build"
+        "heroku-postbuild": "tsc && cd client && npm install && npm run build"
     },
     "keywords": [],
     "author": "",
